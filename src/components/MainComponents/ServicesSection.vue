@@ -32,10 +32,10 @@
     <section class="services__right-section">
       <div class="services__img-wrapper">
         <img
-          src="../../assets/basket-cart.png"
+          src="../../assets/Ellipse-right.png"
           alt="basket picture"
-          width="776"
-          height="613.75"
+          width="609.5"
+          height="548"
         />
       </div>
     </section>
@@ -48,12 +48,13 @@ export default {};
 
 <style lang="scss">
 .services {
-    display: flex;
+  display: flex;
+  min-height: 766px;
   &__left-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0 83.43px 0 0 ;
+    margin: 0 83.43px 0 0;
   }
 
   &__img-top-wrapper {
@@ -64,15 +65,16 @@ export default {};
   &__img-bottom-wrapper {
     font-size: 0;
     position: relative;
+    padding: 0px 0 123px 0px;
     &::after {
-        content: '';
-        width: 171px;
-        height: 63px;
-        background-repeat: no-repeat;
-        background-image: url('../../assets/figures.png');
-        position: absolute;
-        top: 35%;
-        left: 22%;
+      content: "";
+      width: 171px;
+      height: 63px;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/figures.png");
+      position: absolute;
+      top: 23%;
+      left: 22%;
     }
   }
 
@@ -81,6 +83,7 @@ export default {};
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 373px 0 0;
   }
 
   &__title {
@@ -102,19 +105,27 @@ export default {};
 
   &__btn {
     padding: 23px 92px 22px 92px;
+    &:hover {
+      outline: 2px solid #67aefc;
+    }
+    &:active {
+      background: #67aefc;
+    }
   }
 
   &__right-section {
+    font-size: 0;
+    position: relative;
+    &::after {
+      content: "";
+      width: 776px;
+      height: 614px;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/basket-cart.png");
+      position: absolute;
+      top: 30px;
+      left: -50%;
+    }
   }
-
-  &__img-wrapper {
-  }
-}
-.title {
-}
-.description {
-}
-.btn {
 }
 </style>
-

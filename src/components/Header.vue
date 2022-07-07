@@ -161,6 +161,13 @@ export default {
   &__btn {
     padding: 9.82px 39px 9.96px 39px;
     font-size: 0, 9375rem;
+    &:hover {
+    outline: 2px solid #FFFFFF;
+  }
+  &:active {
+    background: white;
+    color: #67AEFC;
+  }
   }
 }
 </style>
