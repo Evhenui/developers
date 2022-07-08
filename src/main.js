@@ -5,3 +5,5 @@ import './scss/global.scss'
 import './scss/same.scss'
 
 createApp(App).use(store).mount('#app')
+
+
