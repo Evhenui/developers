@@ -24,6 +24,7 @@ export default {
   background: #daecff;
   padding: 120px 0;
   position: relative;
+  margin: 0 0 123px 0;
   &::after {
     content: '';
     width: 133px;
