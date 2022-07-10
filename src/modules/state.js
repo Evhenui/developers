@@ -12,5 +12,13 @@ export default {
         {title:'3. Техническая реализация', subtitle: 'После утверждения дизайн-макета наступает следующий этап – верстка. Это трудоемкий процесс: программисты должны все тщательно прописать, чтобы не допустить технических ошибок.', img: require('@/assets/barcode-carousel.png')},
         {title:'4. Наполнение контентом ', subtitle: 'Создание и публикация текстов, а также видео материала. Хороший контент и качественные фотографии привлекают больше посетителей и помогают клиенту лучше ознакомиться с ассортиментом. ', img: require('@/assets/plus-carousel.png')},
         {title:'5. Тестирование', subtitle: 'Составление плана тестирования для определения ошибок. Проверка работы сайта и визуального восприятия для улучшения сайта. Также используются чек-листы для четкого определения ошибок и их устранения.', img: require('@/assets/gear-carousel.png')},
+    ],
+    examplesCard: [
+        {title:'Онлайн-магазин', subtitle: 'для оптовых покупок', img: require('@/assets/two-miniature-green-blue-shopping.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для флористов', img: require('@/assets/flower-purple.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/hair-dryer.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/pexels-shiny-diamond.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для кондитеров', img: require('@/assets/deva-williamson-unsplash.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для художников', img: require('@/assets/color-palette.jpg')},
     ]
 };

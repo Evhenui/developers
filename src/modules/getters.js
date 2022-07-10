@@ -4,6 +4,9 @@ export default {
     },
     CAROUSEL_ITEMS (state) {
         return state.carouselItems;
+    },
+    EXAMPLES_CARD (state) {
+        return state.examplesCard;
     }
 
 };
