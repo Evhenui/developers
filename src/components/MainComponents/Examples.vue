@@ -61,15 +61,15 @@ export default {
     }
     &::after {
       background-image: url('../../assets/shape-sphere-card.png');
-      bottom: 150px;
-      right: -239.27px;
+      bottom: 124px;
+      right: -248.27px;
       width: 111.44px;
       height: 111.44px;
     }
     &::before {
       background-image: url('../../assets/shape-wave-card.png');
-      top: 0;
-      left: -300px;
+      top: 62px;
+      left: -353px;
       width: 233.96px;
       height: 189.92px;
     }

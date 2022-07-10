@@ -43,89 +43,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+}
 </script>
 
-<style lang="scss">
-.services {
-  display: flex;
-  min-height: 766px;
-  &__left-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 83.43px 0 0;
-  }
+<style>
 
-  &__img-top-wrapper {
-    font-size: 0;
-    padding: 38px 0 0 239px;
-  }
-
-  &__img-bottom-wrapper {
-    font-size: 0;
-    position: relative;
-    padding: 0px 0 123px 0px;
-    &::after {
-      content: "";
-      width: 171px;
-      height: 63px;
-      background-repeat: no-repeat;
-      background-image: url("../../assets/figures.png");
-      position: absolute;
-      top: 23%;
-      left: 22%;
-    }
-  }
-
-  &__central-section {
-    padding: 89px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0 373px 0 0;
-  }
-
-  &__title {
-    font-weight: 900;
-    font-size: 3.125rem;
-    line-height: 125%;
-    margin: 0 0 20px 0;
-    max-width: 570px;
-    width: 100%;
-  }
-
-  &__subtitle {
-    font-size: 1rem;
-    line-height: 140%;
-    margin: 0 0 58px 0;
-    max-width: 425px;
-    width: 100%;
-  }
-
-  &__btn {
-    padding: 23px 92px 22px 92px;
-    &:hover {
-      outline: 2px solid #67aefc;
-    }
-    &:active {
-      background: #67aefc;
-    }
-  }
-
-  &__right-section {
-    font-size: 0;
-    position: relative;
-    &::after {
-      content: "";
-      width: 776px;
-      height: 614px;
-      background-repeat: no-repeat;
-      background-image: url("../../assets/basket-cart.png");
-      position: absolute;
-      top: 30px;
-      left: -50%;
-    }
-  }
-}
 </style>
