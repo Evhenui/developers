@@ -1,7 +1,6 @@
 <template>
   <section class="examples">
     <h1 class="examples__title title">Примеры онлайн-магазинов</h1>
-
     <section class="examples__cards">
       <div 
         class="examples__block-img"
@@ -41,7 +40,7 @@ export default {
   align-items: center;
   background: #daecff;
   min-height: 400px;
-
+  margin-bottom: 136px;
   &__title {
     font-weight: 800;
     margin-bottom: 51px;

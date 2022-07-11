@@ -48,18 +48,9 @@ export default {};
 
 <style lang="scss">
 .services {
-  display: flex;
-  min-height: 766px;
-  &__left-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 83.43px 0 0;
-  }
-
   &__img-top-wrapper {
-    font-size: 0;
     padding: 38px 0 0 239px;
+    margin: 0 83.43px 0 0;
   }
 
   &__img-bottom-wrapper {
@@ -80,9 +71,6 @@ export default {};
 
   &__central-section {
     padding: 89px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     margin: 0 373px 0 0;
   }
 
@@ -97,20 +85,12 @@ export default {};
 
   &__subtitle {
     font-size: 1rem;
-    line-height: 140%;
     margin: 0 0 58px 0;
     max-width: 425px;
-    width: 100%;
   }
 
   &__btn {
     padding: 23px 92px 22px 92px;
-    &:hover {
-      outline: 2px solid #67aefc;
-    }
-    &:active {
-      background: #67aefc;
-    }
   }
 
   &__right-section {
@@ -127,5 +107,8 @@ export default {};
       left: -50%;
     }
   }
+  &__img-wrapper {
+      max-width: 609.5px;
+		}
 }
 </style>

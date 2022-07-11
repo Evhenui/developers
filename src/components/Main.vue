@@ -1,10 +1,11 @@
 <template>
     <main class="main">
-        <ServicesSection/>
-        <OurServices/>
-        <DevelopmentStages/>
-        <Examples/>
-        <NeedMore/>
+        <services-section/>
+        <our-services/>
+        <development-stages/>
+        <examples/>
+        <need-more/>
+        <call-section/>
     </main>
 </template>
 
@@ -14,8 +15,9 @@ import OurServices from './MainComponents/OurServices.vue'
 import DevelopmentStages from './MainComponents/DevelopmentStages.vue'
 import Examples from './MainComponents/Examples.vue'
 import NeedMore from './MainComponents/NeedMore.vue'
+import CallSection from './MainComponents/CallSection.vue'
 export default {
-    components: { ServicesSection, OurServices, DevelopmentStages, Examples, NeedMore }
+    components: { ServicesSection, OurServices, DevelopmentStages, Examples, NeedMore, CallSection }
 }
 </script>
 

@@ -31,7 +31,7 @@
             <h1 class="slider-item__title title">{{ item.title }}</h1>
             <p class="slider-item__subtitle description">{{ item.subtitle }}</p>
           </section>
-          <section class="slider-item__img section">
+          <section class="slider-item__img section-img">
             <img :src="item.img" alt="slider image" />
           </section>
         </div>
