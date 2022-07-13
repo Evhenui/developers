@@ -8,5 +8,4 @@ export default {
     EXAMPLES_CARD (state) {
         return state.examplesCard;
     }
-
 };

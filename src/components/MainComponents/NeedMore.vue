@@ -74,37 +74,9 @@ export default {
       font-size: 0.9375rem;
 		}
 
-		&__right-section {
-		}
-
 		&__img-wrapper {
       max-width: 689.51px;
 		}
-}
-.section {
 
-		&__left-info {
-		}
-
-		&__img-top-wrapper {
-		}
-
-		&__central-block {
-		}
-
-		&__title {
-		}
-
-		&__subtitle {
-		}
-
-		&__btn {
-		}
-
-		&__right-block {
-		}
-
-		&__img-wrapper {
-		}
 }
 </style>
