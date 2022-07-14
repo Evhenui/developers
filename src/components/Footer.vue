@@ -95,12 +95,13 @@
       <section class="footer__central-section">
         <nav class="footer__contacts">
           <ul class="footer__list-contacts">
-            <li 
-                class="footer__item-contact description"
-                v-for="(item,index) in FOOTER_CONTACTS"
-                :key="index"
+            <li
+              class="footer__item-contact description"
+              v-for="(item, index) in FOOTER_CONTACTS"
+              :key="index"
             >
-            {{item.contact}}</li>
+              {{ item.contact }}
+            </li>
           </ul>
         </nav>
       </section>
@@ -109,13 +110,15 @@
       </section>
     </section>
     <section class="footer__bottom-wrapper">
-        <p class="footer__license description">Developers 2018-2022 © All rights reserved</p>
+      <p class="footer__license description">
+        Developers 2018-2022 © All rights reserved
+      </p>
     </section>
   </footer>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
 export default {
   computed: { ...mapGetters(["FOOTER_CONTACTS"]) },
 };
@@ -123,73 +126,95 @@ export default {
 
 <style lang="scss">
 .footer {
-    background: #64ABF9;
+  background: #64abf9;
+  padding: 0 0 79px 0;
+  &__top-wrapper {
     padding: 101px 0 79px 371px;
-		&__top-wrapper {
-            display: flex;
-            justify-content: flex-start;
-            margin-bottom: 120px;
-		}
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 120px;
+  }
 
-		&__left-section {
-            margin-right: 131.88px;
-		}
+  &__left-section {
+    margin-right: 131.88px;
+  }
 
-		&__logo-link {
-            font-size: 0;
-            display: inline-block;
-		}
+  &__logo-link {
+    font-size: 0;
+    display: inline-block;
+    margin-bottom: 45.62px;
+  }
 
-		&__social-networks {
-            
-		}
+  &__social-networks {
+  }
 
-		&__list-links {
-            display: flex;
-            
-		}
+  &__list-links {
+    display: flex;
 
-		&__item-link {
-            margin-right: 39.08px;
-            &:last-child {
-                margin-right: 0;
-            }
-            &:nth-child(-n+2) {
-                
-                margin-right: 38.43px;
-            }
-            a {
-                display: inline-block;
-                font-size: 0;
-            }
-		}
+  }
 
-		&__central-section {
-            margin-right: 107px;
-		}
+  &__item-link {
+    margin-right: 39.08px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:nth-child(-n + 2) {
+      margin-right: 38.43px;
+    }
+    a {
+      display: inline-block;
+      font-size: 0;
+    }
+  }
 
-		&__contacts {
-		}
+  &__central-section {
+    margin-right: 107px;
+    padding-top: 25px;
+  }
 
-		&__list-contacts {
-		}
+  &__contacts {
+  }
 
-		&__item-contact {
-		}
+  &__list-contacts {
+  }
 
-		&__help-mail {
-		}
+  &__item-contact {
+    position: relative;
+    padding-left: 32.56px;
+    margin-bottom: 13px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+    &::before {
+      content: '';
+      width: 23.56px;
+      height: 24.5px;
+      background-repeat: no-repeat;
+      background-image: url('../assets/item-viber.svg');
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 
-		&__mail-item {
-		}
+  &__help-mail {
+    padding-top: 25px;
+  }
 
-		&__bottom-wrapper {
-		}
+  &__mail-item {
+  }
 
-		&__license {
-		}
-}
-.description {
+  &__bottom-wrapper {
+    text-align: center;
+  }
+
+  &__license {
+  }
+
+  .footer__item-contact, .footer__mail-item, .footer__license {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+  }
 }
 
 </style>
