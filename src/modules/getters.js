@@ -7,5 +7,8 @@ export default {
     },
     EXAMPLES_CARD (state) {
         return state.examplesCard;
+    },
+    FOOTER_CONTACTS (state) {
+        return state.footerContacts;
     }
 };

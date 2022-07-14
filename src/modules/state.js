@@ -20,5 +20,10 @@ export default {
         {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/pexels-shiny-diamond.jpg')},
         {title:'Онлайн-магазин', subtitle: 'для кондитеров', img: require('@/assets/deva-williamson-unsplash.jpg')},
         {title:'Онлайн-магазин', subtitle: 'для художников', img: require('@/assets/color-palette.jpg')},
+    ],
+    footerContacts: [
+        {contact: 'валерия: +380505859409'},
+        {contact: 'анна: +380505859409'},
+        {contact: 'валерия: +380505859409'},
     ]
 };

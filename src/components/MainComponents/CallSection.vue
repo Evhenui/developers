@@ -38,10 +38,7 @@
           </span>
           <span
             class="input-error"
-            v-if="
-              v$.form.login.$dirty &&
-              v$.form.login.letter.$invalid
-            "
+            v-if="v$.form.login.$dirty && v$.form.login.letter.$invalid"
           >
             Только латинские буквы!
           </span>
@@ -103,23 +100,17 @@
           />
           <span
             class="input-error"
-            v-if="
-              v$.form.email.$dirty &&
-              v$.form.email.required.$invalid
-            "
+            v-if="v$.form.email.$dirty && v$.form.email.required.$invalid"
             >Ошибка! Поле не должно быть пустым!
           </span>
           <span
             class="input-error"
-            v-if="
-              v$.form.email.$dirty &&
-              v$.form.email.email.$invalid
-            "
+            v-if="v$.form.email.$dirty && v$.form.email.email.$invalid"
           >
             Введите корректный email!
           </span>
         </div>
-        <button class="call__btn btn" type="submit" >Отправить</button>
+        <button class="call__btn btn" type="submit">Отправить</button>
       </form>
     </section>
     <section class="call__right-section">
@@ -132,9 +123,8 @@
 import useVuelidate from "@vuelidate/core";
 import { required, email, minLength, helpers } from "@vuelidate/validators";
 
-
-const letter = helpers.regex(/^[a-zA-Z][^\s]*$/)
-const telegram = (value) => !helpers.req(value) || value.startsWith('t.me/');
+const letter = helpers.regex(/^[a-zA-Z][^\s]*$/);
+const telegram = (value) => !helpers.req(value) || value.startsWith("t.me/");
 
 export default {
   data: () => ({
@@ -144,7 +134,6 @@ export default {
       socialNetworks: "",
       email: "",
     },
-
   }),
   validations() {
     return {
@@ -158,10 +147,10 @@ export default {
   methods: {
     checkForm() {
       this.v$.$validate();
-      if(this.v$.$error) {
-        alert('Ошибка')
+      if (this.v$.$error) {
+        alert("Ошибка");
       } else {
-        alert('Данные отправлены')
+        alert("Данные отправлены");
         location.reload();
       }
     },
@@ -175,14 +164,23 @@ export default {
   background-color: #daecff;
   min-height: 774px;
   display: flex;
-  justify-content: space-between;
+
   &__left-section {
+    padding-top: 82px;
+    margin-right: 114.17px;
+    max-width: 329px;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &__central-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 186px;
   }
 
   &__title {
@@ -194,7 +192,7 @@ export default {
 
   &__subtitle {
     text-align: center;
-    max-width: 500px;
+    max-width: 470px;
     width: 100%;
     font-size: 1.125rem;
     line-height: 175%;
@@ -221,7 +219,7 @@ export default {
     input {
       border: 1px solid #67aefc;
       border-radius: 10px;
-      padding: 19px 420px 19px 14px;
+      padding: 19px 255px 18.5px 14px;
       margin-bottom: 5px;
       &::placeholder {
         font-family: "Montserrat", sans-serif;
@@ -248,7 +246,7 @@ export default {
     }
   }
   &__btn {
-    padding: 23px 92px 22px 92px;
+    padding: 21px 81px 21px 82px;
     &:hover {
       outline: 2px solid #67aefc;
     }
@@ -258,6 +256,7 @@ export default {
   }
 
   &__right-section {
+    padding-top: 109px;
   }
   .is-invalid {
     border: 1px solid red;
