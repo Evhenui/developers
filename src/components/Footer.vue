@@ -126,11 +126,10 @@ export default {
 
 <style lang="scss">
 .footer {
-  display: none;
   background: #64abf9;
   padding: 0 0 79px 0;
   &__top-wrapper {
-    padding: 101px 0 79px 371px;
+    padding: 101px 0 79px 19.53125%;
     display: flex;
     justify-content: flex-start;
     margin-bottom: 120px;
@@ -217,5 +216,101 @@ export default {
     color: #FFFFFF;
   }
 }
+@media (max-width: 1550.98px) {
+  .footer {
+    padding: 18px 10.53%;
+    &__top-wrapper {
+    padding: 46px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+  }
+  }
+}
+@media (max-width: 1180.98px) {
+  .footer {
+    padding: 18px 5.53%;
+    &__left-section, &__central-section {
+      margin-right: 8%;
+    }
+  } 
+}
+@media (max-width: 991.98px) {
+  .footer {
+    padding: 18px 1.53%;
+    &__left-section {
+      margin-right: 5%;
+    }
+    &__central-section {
+      margin-right: 3%;
+    }
+    &__item-link {
+      margin-right: 12%;
+    
+    &:nth-child(-n + 2) {
+      margin-right: 12%;
+    }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
 
+  &__top-wrapper {
+   
+  }
+
+  &__left-section {
+
+  }
+
+  &__logo-link {
+   
+  }
+
+  &__social-networks {
+  }
+
+  &__list-links {
+  
+
+  }
+
+  &__item-link {
+ 
+  }
+
+  &__central-section {
+
+  }
+
+  &__contacts {
+  }
+
+  &__list-contacts {
+  }
+
+  &__item-contact {
+   
+  }
+
+  &__help-mail {
+   
+  }
+
+  &__mail-item {
+  }
+
+  &__bottom-wrapper {
+   
+  }
+
+  &__license {
+  }
+
+  .footer__item-contact, .footer__mail-item, .footer__license {
+ 
+  }
+  }
+}
 </style>
