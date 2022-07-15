@@ -126,6 +126,7 @@ export default {
 
 <style lang="scss">
 .footer {
+  display: none;
   background: #64abf9;
   padding: 0 0 79px 0;
   &__top-wrapper {

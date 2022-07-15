@@ -106,6 +106,16 @@ export default {};
       top: 30px;
       left: -50%;
     }
+    &::before {
+      content: "";
+      width: 115px;
+      height: 57px;
+      background-repeat: no-repeat;
+      background-image: url("../../assets/shape-cylinder.png");
+      position: absolute;
+      top: 10px;
+      left: -81px;
+    }
   }
   &__img-wrapper {
       max-width: 609.5px;

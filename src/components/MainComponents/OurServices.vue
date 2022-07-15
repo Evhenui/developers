@@ -23,21 +23,22 @@ export default {
   align-items: center;
   background: #daecff;
   padding: 120px 0;
-  position: relative;
   margin: 0 0 123px 0;
-  &::after {
+  
+  &__title {
+    font-weight: 800;
+    margin: 0 0 75px 0;
+    position: relative;
+    &::after {
     content: '';
     width: 133px;
     height: 148px;
     background-repeat: no-repeat;
     background-image: url('../../assets/bag.png');
     position: absolute;
-    bottom: 113px;
-    right: 128px;
+    top: 344px;
+    right: -254px;
   }
-  &__title {
-    font-weight: 800;
-    margin: 0 0 75px 0;
   }
 
   &__services-wrapper {
