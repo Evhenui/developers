@@ -335,7 +335,7 @@ export default {
       background: #67aefc;
       top: -100%;
       left: 0;
-      z-index: 0;
+      z-index: 1;
       width: 100%;
       transition: top 0.3s;
       padding: 42px 0 49px;
