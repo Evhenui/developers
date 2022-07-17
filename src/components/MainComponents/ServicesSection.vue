@@ -18,7 +18,9 @@
         />
       </div>
     </section>
-    <section class="services__central-section section__central-block section__central-block-mobile">
+    <section
+      class="services__central-section section__central-block section__central-block-mobile"
+    >
       <h1 class="services__title section__title title">
         Разработка интернет-магазина с нуля за неделю
       </h1>
@@ -40,15 +42,20 @@
       </div>
     </section>
     <section class="services__bottom-section-mobile">
-      <div class="services__mobile-img-wrapper">
+      <div class="services__mobile-img-wrapper-left">
+        <img src="../../assets/mobile-img/elipse.png" alt="elipese" />
+      </div>
+      <div class="services__mobile-img-wrapper-center">
         <img
-          src="../../assets/basket-cart-mobile.png"
+          src="../../assets/mobile-img/basket-cart-mobile.png"
           alt="basket picture"
           width="209"
           height="204"
         />
       </div>
-      <div class="services__elements"></div>
+      <div class="services__mobile-img-wrapper-right">
+        <img src="../../assets/mobile-img/ellipse-main.png" alt="" />
+      </div>
     </section>
   </section>
 </template>
@@ -122,7 +129,6 @@ export default {};
       position: absolute;
       top: 30px;
       left: -50%;
-
     }
     &::before {
       content: "";
@@ -139,13 +145,13 @@ export default {};
     display: none;
   }
   &__img-wrapper {
-      max-width: 609.5px;
-		}
+    max-width: 609.5px;
+  }
 }
 @media (max-width: 1710.98px) {
   .services {
     &__central-section {
-    margin-right: 15%;
+      margin-right: 15%;
     }
     &__img-top-wrapper {
       padding-left: 170px;
@@ -156,7 +162,7 @@ export default {};
   .services {
     padding-left: 10.53%;
     min-height: 680px;
-    &__left-section{
+    &__left-section {
       display: none;
     }
     &__central-section {
@@ -179,17 +185,14 @@ export default {};
       }
     }
   }
-
 }
 @media (max-width: 1180.98px) {
   .services {
     padding-left: 5.53%;
     min-height: 650px;
     &__central-section {
-      
     }
   }
-
 }
 @media (max-width: 991.98px) {
   .services {
@@ -209,67 +212,136 @@ export default {};
       }
     }
   }
-
 }
 @media (max-width: 767.98px) {
-
   .services {
     flex-direction: column-reverse;
     padding: 35px 0 0 0;
-    align-items: center;
 
-  &__img-top-wrapper {
-  
-  }
-  &__left-section {
-  
-  }
-  &__img-bottom-wrapper {
+    .services__central-section {
+      margin: 0;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      margin: 0 0 51px 0;
+    }
 
-    &::after {
-    
-   
+    &__bottom-section-mobile {
+      display: flex;
+      margin-bottom: 40px;
+      justify-content: space-between;
+    }
+
+    &__mobile-img-wrapper-left,
+    &__mobile-img-wrapper-center,
+    &__mobile-img-wrapper-right {
+      position: relative;
+      &::after {
+        content: "";
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+      &::before {
+        content: "";
+        background-repeat: no-repeat;
+        position: absolute;
+      }
+    }
+    &__mobile-img-wrapper-left {
+      &::after {
+        top: 0;
+        left: 146px;
+        width: 47px;
+        height: 22px;
+        background-image: url('../../assets/mobile-img/elipse-shape-cylinder-before.png');
+      }
+      &::before {
+        top: 208.95px;
+        left: 0;
+        width: 67px;
+        height: 26px;
+        background-image: url('../../assets/mobile-img/elipse-wave-after.png');
+      }
+    }
+
+    &__mobile-img-wrapper-center {
+      padding-top: 52px;
+      z-index: 2;
+      position: absolute;
+      left: 82px;
+      img {
+        position: relative;
+      }
+      &::after {
+        top: 81px;
+        right: -45px;
+        width: 91px;
+        height: 33px;
+        background-image: url('../../assets/mobile-img/basket-wave-after.png');
+      }
+      &::before {
+        z-index: 0;
+        top: 124px;
+        left: -30px;
+        width: 78px;
+        height: 28px;
+        background-image: url('../../assets/mobile-img/basket-wave-before.png');
+      }
+    }
+
+    &__mobile-img-wrapper-right {
+      padding-top: 7px;
+      img {
+        position: relative;
+        z-index: 1;
+      }
+      &::after {
+        z-index: 1;
+        top: 131px;
+        left: 110px;
+        width: 24px;
+        height: 23px;
+        background-image: url('../../assets/mobile-img/main-elipse-shape-sphere-after.png');
+      }
+      &::before {
+        top: 239px;
+        left: 134px;
+        width: 26px;
+        height: 26px;
+        background-image: url('../../assets/mobile-img/main-elipse-shape-sphere-before.png');
+      }
+    }
+
+    &__title {
+      font-size: 1.6875rem;
+      line-height: 120%;
+      max-width: 317px;
+      margin-bottom: 22px;
+    }
+
+    &__subtitle {
+      max-width: 317px;
+      margin-bottom: 34px;
+    }
+
+    .services__btn {
+      border-radius: 10px;
+      padding: 23px 115px 22px 115px;
+    }
+
+    &__right-section {
+      display: none;
     }
   }
-
-  .services__central-section {
-    margin: 0;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    margin: 0 0 51px 0;
-  }
-  &__bottom-section-mobile {
-    display: block;
-    margin-bottom: 40px;
-    
-  }
-  &__elements {
-
-  }
-  &__title {
-    font-size: 1.6875rem;
-    line-height: 120%;
-    max-width: 317px;
-    margin-bottom: 22px;
-  }
-
-  &__subtitle {
-    max-width: 317px;
-    margin-bottom: 34px;
-  }
-
-  .services__btn {
-    border-radius: 10px;
-    padding: 23px 115px 22px 115px;
-  }
-
-  &__right-section {
-    display: none;
-  }
-  &__img-wrapper {
-  
-		}
+}
+@media (max-width: 339.98px) {
+  .services {
+    &__mobile-img-wrapper-center {
+      left: 35px;
+    }
+    .services__btn {
+          padding: 23px 90px 22px 90px;
+    }
   }
 }
 </style>

@@ -230,9 +230,9 @@ export default {
   background: #67aefc;
   justify-content: space-between;
   margin: 0 0 82px 0;
-  z-index: 2;
+  z-index: 4;
   &__logo-link {
-    z-index: 2;
+    z-index: 4;
     display: inline-block;
     font-size: 0;
     .header__logo-little {
@@ -247,7 +247,7 @@ export default {
   }
 
   &__list {
-    z-index: 2;
+    z-index: 3;
     display: flex;
     column-gap: 1.82vw;
   }
@@ -279,7 +279,7 @@ export default {
     }
   }
   &__wrapper-burger {
-    z-index: 2;
+    z-index: 4;
     display: none;
   }
 }
@@ -306,6 +306,7 @@ export default {
   .header {
     width: 100%;
     padding: 9px 12px 5px 20px;
+    margin: 0 0 28.3px 0;
     &::before {
       content: "";
       width: 100%;
@@ -314,7 +315,7 @@ export default {
       top: 0;
       left: 0;
       background: #67aefc;
-      z-index: 2;
+      z-index: 4;
     }
     &__logo-link {
       .header__logo-normal {
@@ -335,7 +336,7 @@ export default {
       background: #67aefc;
       top: -100%;
       left: 0;
-      z-index: 1;
+      z-index: 3;
       width: 100%;
       transition: top 0.3s;
       padding: 42px 0 49px;
