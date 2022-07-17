@@ -241,7 +241,7 @@ export default {
 <style lang="scss">
 .footer {
   background: #64abf9;
-   padding: 101px 0 79px 19.53125%;
+  padding: 101px 0 79px 19.53125%;
   &__top-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -384,7 +384,8 @@ export default {
 
     &__item-link {
       margin: 0;
-      &:nth-child(1), &:nth-child(2){
+      &:nth-child(1),
+      &:nth-child(2) {
         margin: 0;
       }
     }
@@ -408,14 +409,13 @@ export default {
     }
 
     &__item-contact {
-      
       &::before {
-      content: "";
-      width: 28px;
-      height: 29.4px;
-      background-image: url("../assets/viber-mobile.svg");
-      top: -6px;
-    }
+        content: "";
+        width: 28px;
+        height: 29.4px;
+        background-image: url("../assets/viber-mobile.svg");
+        top: -6px;
+      }
     }
 
     &__help-mail {

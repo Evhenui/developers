@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 .our-services {
-  display: flex;
+  display: none;//flex
   flex-direction: column;
   align-items: center;
   background: #daecff;

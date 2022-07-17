@@ -43,6 +43,7 @@ export default {
 
 <style lang="scss">
 .need-more {
+  display: none;
    padding: 0 144.88px 0 153px;
 		&__left-section {
       margin: 0 162.8px 0 0;

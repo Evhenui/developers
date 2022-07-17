@@ -160,10 +160,11 @@ export default {
 
 <style lang="scss">
 .call {
+
   padding: 180px 232px 0 232px;
   background-color: #daecff;
   min-height: 774px;
-  display: flex;
+  display: none;//flex
 
   &__left-section {
     padding-top: 82px;

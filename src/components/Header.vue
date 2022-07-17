@@ -331,7 +331,7 @@ export default {
       column-gap: 1.56vw;
     }
     &__nav {
-      position: fixed;
+      position: absolute;
       background: #67aefc;
       top: -100%;
       left: 0;

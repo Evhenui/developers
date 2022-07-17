@@ -28,10 +28,10 @@
 }
 
 .section {
-  display: flex;
-  min-height: 766px;
+  //display: flex
+   //min-height: 766px;
   .section__left-info {
-    display: flex;
+    //display:flex
     flex-direction: column;
     justify-content: space-between;
   }
@@ -41,8 +41,8 @@
 
   .section__central-block {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    //flex-direction: column;
+    //align-items: flex-start;
   }
 
   .section__subtitle {

@@ -21,7 +21,7 @@ export default {
 <style lang="scss">
 .development-stages {
   min-height: 785px;
-
+  display: none;
 		&__wrapper {
       margin: 0 0 5.25em 0;
 		}

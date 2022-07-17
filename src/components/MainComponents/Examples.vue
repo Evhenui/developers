@@ -35,7 +35,7 @@ export default {
 <style lang="scss">
 .examples {
   padding: 121px 0;
-  display: flex;
+  display: none;//flex
   flex-direction: column;
   align-items: center;
   background: #daecff;
