@@ -29,9 +29,9 @@
           </svg>
         </div>
       </dt>
-        <dd v-if="item.open" class="accordions__description description">
-          {{ item.subtitle }}
-        </dd>
+      <dd v-if="item.open" class="accordions__description description">
+        {{ item.subtitle }}
+      </dd>
     </dl>
   </div>
 </template>
@@ -49,10 +49,9 @@ export default {
 </script>
 
 <style lang="scss">
-
 .accordions {
-  
   &__fiels {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: #ffffff;
     border-radius: 15px;
     padding: 14px 23.44px 15px 96px;
@@ -66,7 +65,7 @@ export default {
     font-size: 1.125rem;
     line-height: 175%;
     position: relative;
-    transition: all .2s;
+    transition: all 0.2s;
     &::before {
       content: "";
       width: 24px;
@@ -116,5 +115,53 @@ export default {
     }
   }
 }
+@media (max-width: 767.98px) {
+  .accordions {
+    &__fiels {
+      padding-left: 63px;
+    }
+    &__title {
+      font-size: 1.0625rem;
+      &::before {
+        width: 15px;
+        height: 15px;
+        top: 0.4em;
+        left: -5%;
+      }
+    }
+    .active-circle {
+      margin-bottom: 19px;
+      font-size: 1.0625rem;
+    }
+    &__description {
+      font-size: 1.0625rem;
+      margin-bottom: 46px;
+      &::before {
+        left: -4%;
+      }
+    }
+  }
+}
+@media (max-width: 535.98px) {
+  .accordions {
+    &__fiels {
+      padding: 14px 60px 15px 50px;
+    }
+    &__title {
+      &::before {
+        top: 0.4em;
+        left: -11%;
+      }
+    }
+    &__arrow {
+      right: -30px;
+    }
 
+    &__description {
+      &::before {
+        left: -9%;
+      }
+    }
+  }
+}
 </style>
