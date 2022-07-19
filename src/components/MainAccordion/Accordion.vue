@@ -96,7 +96,6 @@ export default {
   .active {
     transform: rotate(0.5turn);
   }
-
   &__description {
     max-width: 1004px;
     width: 100%;
@@ -164,4 +163,5 @@ export default {
     }
   }
 }
+
 </style>

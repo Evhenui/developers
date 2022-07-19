@@ -23,7 +23,6 @@ export default {
   align-items: center;
   background: #daecff;
   padding: 120px 0;
-  margin: 0 0 123px 0;
   
   &__title {
     text-align: center;
