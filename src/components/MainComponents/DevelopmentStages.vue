@@ -6,15 +6,16 @@
       </h1>
     </div>
     <div class="development-stages__carusele-wrapper">
-      <Carousel class="carousel-section" />
+      <CarouselOurServices/>
     </div>
   </section>
 </template>
 
 <script>
 import Carousel from "../Carousel/Carousel.vue";
+import CarouselOurServices from "../Carousel/CarouselOurServices.vue";
 export default {
-  components: { Carousel },
+  components: { Carousel, CarouselOurServices },
 };
 </script>
 
@@ -85,7 +86,7 @@ export default {
       background-image: url("../../assets/mobile-img/shape-sphere-accardion.png");
       width: 39.86px;
       height: 39.86px;
-      top: -22%;
+      top: -17%;
       left: -6%;
     }
     &::after {

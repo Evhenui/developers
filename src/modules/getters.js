@@ -2,8 +2,8 @@ export default {
     ACCORDION_ITEMS (state) {
         return state.accordionItems;
     },
-    CAROUSEL_ITEMS (state) {
-        return state.carouselItems;
+    CAROUSEL_OUR_SERVICES_ITEMS (state) {
+        return state.carouselOurServicesItems;
     },
     EXAMPLES_CARD (state) {
         return state.examplesCard;

@@ -22,12 +22,16 @@
         </div>
       </div>
     </section>
+    <CarouselExamples></CarouselExamples>
   </section>
 </template>
 
 <script>
+import Carousel from "../Carousel/Carousel.vue";
+import CarouselExamples from "../Carousel/CarouselExamples.vue";
 import { mapGetters } from 'vuex';
 export default {
+   components: { Carousel, CarouselExamples },
   computed: {...mapGetters(['EXAMPLES_CARD'])}
 };
 </script>
@@ -35,7 +39,7 @@ export default {
 <style lang="scss">
 .examples {
   padding: 121px 0;
-  display: none;//flex
+  display: flex;//flex
   flex-direction: column;
   align-items: center;
   background: #daecff;
@@ -124,4 +128,6 @@ export default {
     margin: 0;
   }
 }
+@media (max-width: 991.98px) { }
+@media (max-width: 767.98px) { }
 </style>
