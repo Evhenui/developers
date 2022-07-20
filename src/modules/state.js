@@ -14,12 +14,12 @@ export default {
         {title:'5. Тестирование', subtitle: 'Составление плана тестирования для определения ошибок. Проверка работы сайта и визуального восприятия для улучшения сайта. Также используются чек-листы для четкого определения ошибок и их устранения.', img: require('@/assets/gear-carousel.png'), imgMobile: require('@/assets/mobile-img/gear-carousel-mobile.png')},
     ],
     examplesCard: [
-        {title:'Онлайн-магазин', subtitle: 'для оптовых покупок', img: require('@/assets/two-miniature-green-blue-shopping.jpg')},
-        {title:'Онлайн-магазин', subtitle: 'для флористов', img: require('@/assets/flower-purple.jpg')},
-        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/hair-dryer.jpg')},
-        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/pexels-shiny-diamond.jpg')},
-        {title:'Онлайн-магазин', subtitle: 'для кондитеров', img: require('@/assets/deva-williamson-unsplash.jpg')},
-        {title:'Онлайн-магазин', subtitle: 'для художников', img: require('@/assets/color-palette.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для оптовых покупок', img: require('@/assets/two-miniature-green-blue-shopping.jpg'), imgMobile: require('@/assets/mobile-img/carousel/two-miniature-green-blue-shopping-mobile.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для флористов', img: require('@/assets/flower-purple.jpg'), imgMobile: require('@/assets/mobile-img/carousel/flower-purple-mobile.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/hair-dryer.jpg'), imgMobile: require('@/assets/mobile-img/carousel/close-up-of-hair-dryer-and-brush-mobile.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для парикмахеров', img: require('@/assets/pexels-shiny-diamond.jpg'), imgMobile: require('@/assets/mobile-img/carousel/pexels-shiny-diamond-mobile.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для кондитеров', img: require('@/assets/deva-williamson-unsplash.jpg'), imgMobile: require('@/assets/mobile-img/carousel/deva-williamson-mobile.jpg')},
+        {title:'Онлайн-магазин', subtitle: 'для художников', img: require('@/assets/color-palette.jpg'), imgMobile: require('@/assets/mobile-img/carousel/color-palette-mobile.jpg')},
     ],
     footerContacts: [
         {contact: 'валерия: +380505859409'},

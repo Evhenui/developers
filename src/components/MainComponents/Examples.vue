@@ -22,7 +22,7 @@
         </div>
       </div>
     </section>
-    <CarouselExamples></CarouselExamples>
+    <CarouselExamples class="carousel-examples"></CarouselExamples>
   </section>
 </template>
 
@@ -38,13 +38,33 @@ export default {
 
 <style lang="scss">
 .examples {
-  padding: 121px 0;
-  display: flex;//flex
+  padding: 121px 10px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   background: #daecff;
   min-height: 400px;
   margin-bottom: 136px;
+  position: relative;
+  &::after, &::before {
+      content: '';
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+  &::after {
+      background-image: url('../../assets/shape-sphere-card.png');
+      bottom: 249px;
+      right: 101.73px;
+      width: 111.44px;
+      height: 111.44px;
+    }
+    &::before {
+      background-image: url('../../assets/shape-wave-card.png');
+      top: 270px;
+      left: 27px;
+      width: 233.96px;
+      height: 189.92px;
+    }
   &__title {
     font-weight: 800;
     margin-bottom: 51px;
@@ -55,27 +75,7 @@ export default {
     max-width: 1158.92px;
     gap: 39px 32.94px;
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    &::after, &::before {
-      content: '';
-      background-repeat: no-repeat;
-      position: absolute;
-    }
-    &::after {
-      background-image: url('../../assets/shape-sphere-card.png');
-      bottom: 124px;
-      right: -248.27px;
-      width: 111.44px;
-      height: 111.44px;
-    }
-    &::before {
-      background-image: url('../../assets/shape-wave-card.png');
-      top: 62px;
-      left: -353px;
-      width: 233.96px;
-      height: 189.92px;
-    }
+    flex-wrap: wrap;  
   }
 
   &__block-img {
@@ -95,7 +95,6 @@ export default {
     display: flex;
     width: 100%;
     border-radius: 15px;
-   
     background-repeat: no-repeat;
     background-position: center;
     background-color: #daecff;
@@ -127,7 +126,61 @@ export default {
   &__inside-hover-subtitle {
     margin: 0;
   }
+  .carousel-examples {
+    display: none;
+  }
 }
-@media (max-width: 991.98px) { }
+@media (max-width: 1650.98px) { 
+  .examples {
+    &::after, &::before {
+      width: 0;
+      height: 0;
+    }
+    &__cards {
+      max-width: 922.92px;
+      gap: 20px 20.94px;
+    }
+    &__block-img {
+      max-width: 450.99px;
+    }
+    &__container-img{
+      max-width: 450.99px;
+      min-height: 399px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .examples { 
+     &::before {
+      top: 200px;
+      left: 0;
+      width: 233.96px;
+      height: 189.92px;
+    }
+    &::after {
+      right: 90px;
+      width: 111.44px;
+      height: 111.44px;
+    }
+
+    &__cards {
+    display: none;
+  }
+   .carousel-examples {
+    display: block;
+    max-width: 335px;
+  }
+    &__block-img {
+      max-width: 335px;
+    }
+    &__container-img{
+      max-width: 335px;
+      min-height: 260px;
+    }
+    &__container-img:hover &__container-transit-images {
+    transform: translate(0px, 0px);
+  }
+  }
+ }
 @media (max-width: 767.98px) { }
 </style>
