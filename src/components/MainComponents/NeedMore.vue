@@ -144,6 +144,17 @@ export default {};
 
     &__central-section {
       align-items: center;
+      position: relative;
+      &:after {
+        content: '';
+        background-repeat: no-repeat;
+        background-image: url('../../assets/mobile-img/shape-sphere-accardion.png');
+        width: 41px;
+        height: 41px;
+        position: absolute;
+        top: -9%;
+        right: 3%;
+      }
     }
 
     &__title {

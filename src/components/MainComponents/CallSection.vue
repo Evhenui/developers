@@ -1,13 +1,5 @@
 <template>
   <section class="call">
-    <section class="call__left-section">
-      <img
-        src="../../assets/phone-call.png"
-        alt="call"
-        width="329"
-        height="339"
-      />
-    </section>
     <section class="call__central-section">
       <h1 class="call__title title">Обсудить проект</h1>
       <p class="call__subtitle description">
@@ -112,9 +104,14 @@
         </div>
         <button class="call__btn btn" type="submit">Отправить</button>
       </form>
-    </section>
-    <section class="call__right-section">
-      <img src="../../assets/shape-wave-call.png" alt="figure" />
+      <div class="call__img-wrapper">
+        <img
+          src="../../assets/mobile-img/phone-call-mobile.png"
+          alt="phone call"
+          width="286"
+          height="291"
+        />
+      </div>
     </section>
   </section>
 </template>
@@ -160,28 +157,39 @@ export default {
 
 <style lang="scss">
 .call {
-
-  padding: 180px 232px 0 232px;
+  padding: 180px 232px 128px 232px;
   background-color: #daecff;
-  min-height: 774px;
-  display: none;//flex
-
-  &__left-section {
-    padding-top: 82px;
-    margin-right: 114.17px;
-    max-width: 329px;
-    width: 100%;
-    img {
-      width: 100%;
-      height: auto;
-    }
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &__img-wrapper {
+    display: none;
+  }
+  &::after,
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  &::after {
+    top: 36%;
+    right: 11.7%;
+    background-image: url("@/assets/shape-wave-call.png");
+    width: 182px;
+    height: 145px;
+  }
+  &::before {
+    top: 31%;
+    left: 9.8%;
+    background-image: url("@/assets/phone-call.png");
+    width: 329px;
+    height: 339px;
   }
 
   &__central-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 186px;
   }
 
   &__title {
@@ -261,6 +269,61 @@ export default {
   }
   .is-invalid {
     border: 1px solid red;
+  }
+}
+@media (max-width: 1400.98px) {
+  .call {
+    &::after {
+      right: 2%;
+      background-size: 150px;
+    }
+    &::before {
+      left: 0;
+      background-size: 250px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .call {
+    &::after,
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .call {
+    padding: 42px 20px 25px 20px;
+    &__img-wrapper {
+      display: block;
+      max-width: 286px;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__title {
+      font-size: 1.4375rem;
+      margin-bottom: 17px;
+    }
+    &__subtitle {
+      font-size: 1.0625rem;
+      line-height: 175%;
+      margin-bottom: 25px;
+    }
+    &__input-login {
+      input {
+        padding: 19px 119px 18.5px 16px;
+        max-width: 335px;
+        width: 100%;
+      }
+    }
+    &__btn {
+      width: 100%;
+      margin-bottom: 42px;
+    }
   }
 }
 </style>

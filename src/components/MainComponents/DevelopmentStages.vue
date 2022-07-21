@@ -6,7 +6,7 @@
       </h1>
     </div>
     <div class="development-stages__carusele-wrapper">
-      <CarouselOurServices/>
+      <CarouselOurServices />
     </div>
   </section>
 </template>
@@ -68,43 +68,43 @@ export default {
 }
 @media (max-width: 767.98px) {
   .development-stages {
-  min-height: 785px;
-  padding: 42px 20px 45px 20px;
-  &__wrapper {
-    margin: 0 0 2em 0;
-  }
-
-  &__title {
-    font-size: 1.4375rem;
-    line-height: 150%;
-  }
-
-  &__carusele-wrapper {
-    margin: 0 auto;
-    position: relative;
-    &::before {
-      background-image: url("../../assets/mobile-img/shape-sphere-accardion.png");
-      width: 39.86px;
-      height: 39.86px;
-      top: -17%;
-      left: -6%;
+    min-height: 785px;
+    padding: 42px 20px 45px 20px;
+    &__wrapper {
+      margin: 0 0 2em 0;
     }
-    &::after {
-      background-image: none;
-      width: 0;
-      height: 0;
+
+    &__title {
+      font-size: 1.4375rem;
+      line-height: 150%;
+    }
+
+    &__carusele-wrapper {
+      margin: 0 auto;
+      position: relative;
+      &::before {
+        background-image: url("../../assets/mobile-img/shape-sphere-accardion.png");
+        width: 39.86px;
+        height: 39.86px;
+        top: -17%;
+        left: -6%;
+      }
+      &::after {
+        background-image: none;
+        width: 0;
+        height: 0;
+      }
     }
   }
-}
 }
 @media (max-width: 480.98px) {
   .development-stages {
-  &__carusele-wrapper {
-    &::before {
-      top: -18%;
-      left: -11%;
+    &__carusele-wrapper {
+      &::before {
+        top: -18%;
+        left: -11%;
+      }
     }
   }
-}
 }
 </style>
