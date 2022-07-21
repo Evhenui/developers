@@ -69,9 +69,9 @@ export default {
   computed: { ...mapGetters(["EXAMPLES_CARD"]) },
   methods: {
     halfSwiper: function (arr, part) {
-      if(part === 'odd') {
+      if (part === "odd") {
         return arr.filter((item, index) => index % 2 === 0);
-      } else if (part === 'even') {
+      } else if (part === "even") {
         return arr.filter((item, index) => index % 2 != 0);
       } else {
         return false;
@@ -94,6 +94,4 @@ export default {
 .slider-buttons {
   column-gap: 107px;
 }
-
-
 </style>

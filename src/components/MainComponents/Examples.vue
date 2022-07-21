@@ -46,7 +46,6 @@ export default {
   align-items: center;
   background: #daecff;
   min-height: 400px;
-  margin-bottom: 136px;
   position: relative;
   &::after,
   &::before {
